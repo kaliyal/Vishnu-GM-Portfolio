@@ -12,6 +12,7 @@ export default function Projects() {
 const styles = {
   container: {
     minHeight: "100vh",
+    paddingTop: "120px",
     backgroundColor: "#0B0F1A",
     color: "#E5E7EB",
     padding: "60px"

@@ -41,6 +41,7 @@ applications for global clients.
 const styles = {
   page: {
     minHeight: "100vh",
+    paddingTop: "120px",
     backgroundColor: "#0B0F1A",
     display: "flex",
     alignItems: "center",
