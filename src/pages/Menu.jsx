@@ -6,11 +6,12 @@ export default function Menu() {
 
   return (
     <div style={styles.page}>
+      {/* LEFT CONTENT */}
       <motion.div
-        initial={{ opacity: 0, y: 16 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, ease: "easeOut" }}
-        style={styles.content}
+        style={styles.left}
       >
         <h1 style={styles.name}>VISHNU GM</h1>
 
@@ -19,12 +20,8 @@ export default function Menu() {
         </p>
 
         <p style={styles.description}>
-        Senior Unity Game Developer with strong expertise in gameplay systems, AR/VR/XR development, and real-time simulations. Experienced in
-building and delivering mobile games, immersive training applications, and metaverse platforms using Unity and C#. Proven ability to architect
-networked systems, integrate LCMS and REST APIs, manage Unity Addressables, and own end-to-end build and deployment pipelines. Skilled
-in developing core gameplay mechanics, implementing custom analytics and user progress tracking, and optimizing performance for mobile
-and VR platforms. Adept at collaborating with cross-functional teams, mentoring developers, and delivering scalable, production-ready
-applications for global clients.
+          I build games, immersive AR/VR experiences, and real-time simulations
+          across education, healthcare, and training domains.
         </p>
 
         <button
@@ -34,6 +31,11 @@ applications for global clients.
           VIEW PROJECTS
         </button>
       </motion.div>
+
+      {/* RIGHT BACKGROUND IMAGE */}
+      <div style={styles.right}>
+        <div style={styles.overlay} />
+      </div>
     </div>
   )
 }
@@ -43,32 +45,50 @@ const styles = {
     minHeight: "100vh",
     paddingTop: "120px",
     backgroundColor: "#0B0F1A",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    padding: "40px",
+    display: "grid",
+    gridTemplateColumns: "1.1fr 0.9fr",
     color: "#E5E7EB"
   },
-  content: {
+
+  left: {
+    padding: "80px",
     maxWidth: "720px"
   },
+
+  right: {
+    position: "relative",
+    backgroundImage: "url('/hero-bg.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center"
+  },
+
+  overlay: {
+    position: "absolute",
+    inset: 0,
+    background:
+      "linear-gradient(to left, rgba(11,15,26,0.9), rgba(11,15,26,0.3))"
+  },
+
   name: {
     fontSize: "3.4rem",
     fontWeight: "600",
     letterSpacing: "1.5px",
     marginBottom: "12px"
   },
+
   role: {
     fontSize: "1.05rem",
     color: "#9CA3AF",
     marginBottom: "28px"
   },
+
   description: {
     fontSize: "1.2rem",
     lineHeight: "1.65",
     marginBottom: "48px",
     maxWidth: "640px"
   },
+
   button: {
     background: "transparent",
     border: "1px solid #E5E7EB",
