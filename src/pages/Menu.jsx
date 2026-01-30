@@ -19,8 +19,12 @@ export default function Menu() {
         </p>
 
         <p style={styles.description}>
-          I build games, immersive AR/VR experiences, and real-time simulations
-          across education, healthcare, and training domains.
+        Senior Unity Game Developer with strong expertise in gameplay systems, AR/VR/XR development, and real-time simulations. Experienced in
+building and delivering mobile games, immersive training applications, and metaverse platforms using Unity and C#. Proven ability to architect
+networked systems, integrate LCMS and REST APIs, manage Unity Addressables, and own end-to-end build and deployment pipelines. Skilled
+in developing core gameplay mechanics, implementing custom analytics and user progress tracking, and optimizing performance for mobile
+and VR platforms. Adept at collaborating with cross-functional teams, mentoring developers, and delivering scalable, production-ready
+applications for global clients.
         </p>
 
         <button
